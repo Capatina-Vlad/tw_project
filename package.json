@@ -1,0 +1,19 @@
+{
+  "name": "proiect_tw",
+  "version": "1.0.0",
+  "description": "",
+  "main": "home.js",
+  "scripts": {
+    "test": "hello world"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/justvladhere/tw_project.git"
+  },
+  "author": "Vlad Capatina",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/justvladhere/tw_project/issues"
+  },
+  "homepage": "https://github.com/justvladhere/tw_project#readme"
+}

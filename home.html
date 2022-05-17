@@ -1,74 +1,95 @@
 <!DOCTYPE html>
 <html>
-<head>
-<link rel="stylesheet" href="home.css">
-<script src="home.js"></script>
-</head>
+  <head>
+    <link rel="stylesheet" href="home.css" />
+  </head>
 
-<header>
-<h1>JobCamp</h1>
-<img class="logo" src="img/fair.png">
+  <header>
+    <h1 id="titlu">JobCamp</h1>
+    <img class="logo" src="img/fair.png" />
 
-<div class="meniu">
-<p>Support</p>
-<p>Home</p>
-<button>Log in</button>
-<button>Sign up</button>
-</div>
-</header>
+    <div class="meniu">
+      <p onclick="location.href='jobs.html'">Jobs</p>
+      <p>Support</p>
+      <p onclick="location.href='home.html'">Home</p>
+      <button class="open-button" onclick="openForm()">Log in</button>
+      <div id="overlay"></div>
+      <div class="form-popup" id="myForm">
+        <form action="/action_page.php" class="form-container">
+          <h1>Login</h1>
 
+          <label for="email"><b>Email</b></label>
+          <input type="text" placeholder="Enter Email" name="email" required />
 
-<body>
-<div class="action">
-<input class="jobName" type="text" placeholder="Job name" name="text"/>
-<select class="category">
-    <option value="" disabled selected hidden>Category name</option>
-    <option value="1">1</option>
-    <option value="2">2</option>
-    <option value="3">3</option>
-  </select>
-<div class="search">Search</div>
-</div>
+          <label for="psw"><b>Password</b></label>
+          <input
+            type="password"
+            placeholder="Enter Password"
+            name="psw"
+            required
+          />
 
-<div class="options">
-<div class="find">Find a job</div>  
-<div class="post">Post a job</div>  
-</div>
-</body>
+          <button type="submit" class="btn">Login</button>
+          <button type="button" class="btn cancel" onclick="closeForm()">
+            Close
+          </button>
+        </form>
+      </div>
+      <button>Sign up</button>
+    </div>
+  </header>
 
-<footer>
+  <body>
+    <div class="action">
+      <input class="jobName" type="text" placeholder="Job name" name="text" />
+      <select class="category">
+        <option value="" disabled selected hidden>Category name</option>
+        <option value="1">Health care</option>
+        <option value="2">Marketing</option>
+        <option value="3">IT</option>
+        <option value="4">Education</option>
+        <option value="5">Art & Design</option>
+        <option value="6">Construction</option>
+      </select>
+      <div class="search">Search</div>
+    </div>
 
-<div class="card">
-<img class="doctor" src="img/doctor.png">
-Health care
-</div>
+    <div class="options">
+      <div class="find">Find a job</div>
+      <div class="post">Post a job</div>
+    </div>
+  </body>
 
-<div class="card">
-<img class="marketing" src="img/promotion.png">
-Marketing
-</div>
+  <footer>
+    <div class="card">
+      <img class="doctor" src="img/doctor.png" />
+      Health care
+    </div>
 
-<div class="card">
-<img class="it" src="img/technical-support.png">
-IT
-</div>
+    <div class="card">
+      <img class="marketing" src="img/promotion.png" />
+      Marketing
+    </div>
 
-<div class="card">
-<img class="ed" src="img/presentation.png">
-Education
-</div>
+    <div class="card">
+      <img class="it" src="img/technical-support.png" />
+      IT
+    </div>
 
-<div class="card">
-<img class="design" src="img/paint-palette.png">
-Art & Design
-</div>
+    <div class="card">
+      <img class="ed" src="img/presentation.png" />
+      Education
+    </div>
 
-<div class="card">
-<img class="constr" src="img/helmet.png">
-Construction
-</div>
+    <div class="card">
+      <img class="design" src="img/paint-palette.png" />
+      Art & Design
+    </div>
 
-
-</footer>
-
+    <div class="card">
+      <img class="constr" src="img/helmet.png" />
+      Construction
+    </div>
+  </footer>
+  <script src="home.js"></script>
 </html>
