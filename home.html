@@ -12,30 +12,95 @@
       <p onclick="location.href='jobs.html'">Jobs</p>
       <p>Support</p>
       <p onclick="location.href='home.html'">Home</p>
-      <button class="open-button" onclick="openForm()">Log in</button>
+      <button id="logIN" class="open-button" onclick="openForm()">Log in</button>
       <div id="overlay"></div>
       <div class="form-popup" id="myForm">
         <form action="/action_page.php" class="form-container">
           <h1>Login</h1>
 
           <label for="email"><b>Email</b></label>
-          <input type="text" placeholder="Enter Email" name="email" required />
+          <input
+            id="lemail"
+            type="text"
+            placeholder="Enter Email"
+            name="email"
+            required
+          />
 
           <label for="psw"><b>Password</b></label>
           <input
+            id="lpsw"
             type="password"
             placeholder="Enter Password"
             name="psw"
             required
           />
 
-          <button type="submit" class="btn">Login</button>
+          <button id="log" type="submit" class="btn">Login</button>
           <button type="button" class="btn cancel" onclick="closeForm()">
             Close
           </button>
         </form>
       </div>
-      <button>Sign up</button>
+
+      <button id="sign" class="open-button" onclick="openForm2()">Sign up</button>
+      <div id="overlay"></div>
+      <div class="form-popup" id="myForm2">
+        <form action="/action_page.php" class="form-container">
+          <h1>Login</h1>
+
+          <label for="user"><b>Username</b></label>
+          <input
+            id="uname"
+            type="text"
+            placeholder="Enter username"
+            name="user"
+            required
+          />
+
+          <label for="email"><b>Name</b></label>
+          <input
+            id="name"
+            type="text"
+            placeholder="Enter name"
+            name="name"
+            required
+          />
+
+          <label for="phone"><b>Phone Number</b></label>
+          <input
+            id="pnumber"
+            type="text"
+            placeholder="Enter phone number"
+            name="phone"
+            required
+          />
+
+          <label for="email"><b>Email</b></label>
+          <input
+            id="email"
+            type="text"
+            placeholder="Enter Email"
+            name="email"
+            required
+          />
+
+          <label for="psw"><b>Password</b></label>
+          <input
+            id="psw"
+            type="password"
+            placeholder="Enter Password"
+            name="psw"
+            required
+          />
+
+          <button id="sbm" type="button" class="btn">Create account</button>
+          <button type="button" class="btn cancel" onclick="closeForm2()">
+            Close
+          </button>
+        </form>
+      </div>
+      <b id="logged"></b>
     </div>
   </header>
 
