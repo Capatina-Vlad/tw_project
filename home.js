@@ -110,4 +110,7 @@ document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("log").addEventListener("click", validlogin);
 });
 
+window.addEventListener('load',setTimeout(function(){
+  document.querySelector('body').classList.add("loaded")  
+},2000));
 

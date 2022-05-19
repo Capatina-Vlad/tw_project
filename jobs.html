@@ -2,7 +2,6 @@
 <html>
   <head>
     <link rel="stylesheet" href="jobs.css" />
-    <script src="home.js"></script>
   </head>
 
   <header>
@@ -10,16 +9,87 @@
     <img class="logo" src="img/fair.png" />
 
     <div class="meniu">
-      <p>Support</p>
+      <p>About us</p>
       <p onclick="location.href='home.html'">Home</p>
       <button>Log in</button>
       <button>Sign up</button>
     </div>
   </header>
 
+  <div class="loader-wrapper">
+    <div class="loader"></div>
+    <div class="loader-section section-left"></div>
+    <div class="loader-section section-right"></div>
+  </div>
+  
   <body>
-    <div class="box"> </div>
-  </body>
+    <section id="side"></section>
+    <button class="add" onClick="createDiv()">Click me!</button>
 
-  <footer></footer>
+<div id="content" style="display: none;">
+
+</div>
+
+<button id="sign" class="open-button" onclick="openForm2()">Sign up</button>
+      <div id="overlay"></div>
+<div class="form-popup" id="myForm2">
+  <form action="/action_page.php" class="form-container">
+    <h1>Login</h1>
+
+    <label for="user"><b>Username</b></label>
+    <input
+      id="uname"
+      type="text"
+      placeholder="Enter username"
+      name="user"
+      required
+    />
+
+    <label for="email"><b>Name</b></label>
+    <input
+      id="name"
+      type="text"
+      placeholder="Enter name"
+      name="name"
+      required
+    />
+
+    <label for="phone"><b>Phone Number</b></label>
+    <input
+      id="pnumber"
+      type="text"
+      placeholder="Enter phone number"
+      name="phone"
+      required
+    />
+
+    <label for="email"><b>Email</b></label>
+    <input
+      id="email"
+      type="text"
+      placeholder="Enter Email"
+      name="email"
+      required
+    />
+
+    <label for="psw"><b>Password</b></label>
+    <input
+      id="psw"
+      type="password"
+      placeholder="Enter Password"
+      name="psw"
+      required
+    />
+
+    <button id="sbm" type="button" class="btn">Create account</button>
+    <button type="button" class="btn cancel" onclick="closeForm2()">
+      Close
+    </button>
+  </form>
+  </body>
+  
+
+  <footer>
+    <script src="jobs.js"></script>
+  </footer>
 </html>

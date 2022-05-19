@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: "Averia Serif Libre", Averia Libre, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 35%;
+  color: purple;
+
+}
+
+ul {
+  list-style: none;
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #337357;
+  display: flex;
+  flex-direction: column;
+}
+
+ul li {
+  margin: 5px;
+  padding: 5px;
+  margin-top: 75px;
+  margin-left: 40px;
+}
+
+ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 22px;
+  padding: 5px;
+  font-family: "Averia Serif Libre", Averia Libre, sans-serif;
+}
+
+ul li a:hover {
+  color: blue;
+}
+
+section {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #51e2c2;
+}
+
+#sec1 {
+  background: linear-gradient(-45deg, white 30%, #51e2c2 30%);
+}
+
+#sec2 {
+  background: linear-gradient(-45deg, white 30%, lightgreen 0%);
+}
+#sec3 {
+  background: linear-gradient(-45deg, white 30%, lightblue 0%);
+}
+#sec4 {
+  background: linear-gradient(-45deg, white 30%, purple 0%);
+}
+#sub {
+    background: linear-gradient(-45deg, white 30%, pink 0%);
+}
+@font-face {
+  font-family: Fredoka One;
+  src: url(fonts/FredokaOne-Regular.ttf);
+}
+@font-face {
+  font-family: Averia Libre;
+  src: url(fonts/AveriaSerifLibre-Regular.ttf);
+}
+
+#titlu {
+  color: white;
+  margin-left: 10px;
+  font-family: "Fredoka One", Fredoka One, serif;
+  font-size: 24px;
+}
+
+.logo {
+  width: 45px;
+  height: 45px;
+  margin-left: 5px;
+}
+
+div {
+  font-size: 15px;
+  align-content: center;
+  justify-items: center;
+  flex-wrap: wrap;
+  margin-left: 200px;
+}
+
+div p {
+  margin-right: 200px;
+  color: #152f47;
+  text-decoration: none;
+  font-size: 22px;
+  padding: 5px;
+  font-family: "Averia Serif Libre", Averia Libre, sans-serif;
+}
+
+h2 {
+    margin-left: 50px;
+}
+
+#sub1 {
+    margin-left:100px;
+    margin-top: 0%;
+    margin-bottom: -50%;
+}
+
+#sub1:before {
+    content: counter(Sub 1);
+    font-family: "Averia Serif Libre", Averia Libre, sans-serif;
+    color: white;
+}
+
+#clock {
+  float: right;
+  text-align: right;
+  width: 50%;
+}
+
+#seconds {
+  float: right;
+  text-align: right;
+  width: 50%;
+}

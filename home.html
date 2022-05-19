@@ -10,7 +10,7 @@
 
     <div class="meniu">
       <p onclick="location.href='jobs.html'">Jobs</p>
-      <p>Support</p>
+      <p onclick="location.href='about.html'">About us</p>
       <p onclick="location.href='home.html'">Home</p>
       <button id="logIN" class="open-button" onclick="openForm()">Log in</button>
       <div id="overlay"></div>
@@ -104,6 +104,12 @@
     </div>
   </header>
 
+  <div class="loader-wrapper">
+    <div class="loader"></div>
+    <div class="loader-section section-left"></div>
+    <div class="loader-section section-right"></div>
+  </div>
+
   <body>
     <div class="action">
       <input class="jobName" type="text" placeholder="Job name" name="text" />
@@ -121,7 +127,7 @@
 
     <div class="options">
       <div class="find">Find a job</div>
-      <div class="post">Post a job</div>
+      <div class="post" onclick="location.href='jobs.html'">Post a job</div>
     </div>
   </body>
 
